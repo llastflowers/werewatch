@@ -7,6 +7,9 @@
 ## Tech
 
 ## Credits
+* The Movie Database API
+* Entertainment Data Hub API
+* Flaticon
 
 ## License
 MIT © Brittany L. Houtz
