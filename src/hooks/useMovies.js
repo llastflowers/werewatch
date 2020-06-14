@@ -9,7 +9,7 @@ export const useMovies = (query) => {
     if(query !== '') {
 
       getMovies(query)
-        .then(movieResults => setMovieResults(movieResults));
+        .then(results => setMovieResults(results));
     }
   }, [query]);
   return movieResults;
