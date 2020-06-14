@@ -7,7 +7,7 @@ import Home from './Home';
 
 const Header = () => (
   <header>
-    <a target="_blank" href="/">
+    <a href="/">
       <h1>WereWatch</h1>
     </a>
   </header>
