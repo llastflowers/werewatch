@@ -5,6 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 import MovieSearch from './MovieSearch';
+import MovieDetail from './MovieDetail';
 
 const Header = () => (
   <header>
@@ -26,9 +27,8 @@ export default function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/" component={MovieSearch}/>
-      </Switch>
+      <Route exact path="/" component={MovieSearch}/>
+      <Route path="/:movie_id" component={MovieDetail} />
       <Footer />
     </Router>
   );
