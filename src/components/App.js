@@ -1,9 +1,10 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
-import Home from './Home';
+import MovieSearch from './MovieSearch';
 
 const Header = () => (
   <header>
@@ -25,7 +26,9 @@ export default function App() {
   return (
     <Router>
       <Header />
-      <Route exact path="/" component={Home}/>
+      <Switch>
+        <Route exact path="/" component={MovieSearch}/>
+      </Switch>
       <Footer />
     </Router>
   );

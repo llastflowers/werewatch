@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import useMovies from '../hooks/useMovies';
 import MovieResults from './MovieResults';
 
-const Home = () => {
+const MovieSearch = () => {
   const [query, setQuery] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const moviesList = useMovies(query);
@@ -18,11 +18,9 @@ const Home = () => {
         <input type='text' placeholder="Search by movie title" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
         <button>Search</button>
       </form>
-      <ul>
-        {moviesList.length > 1 && <MovieResults moviesList={moviesList} />}
-      </ul>
+      {moviesList.length > 1 && <MovieResults moviesList={moviesList} />}
     </>
   );
 };
 
-export default Home;
+export default MovieSearch;
