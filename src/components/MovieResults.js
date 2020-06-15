@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MovieResults = ({ moviesList }) => {
-  const movieItem = moviesList.map(movie => (
-    <li key={movie.results.id}>
-      <p>{movie.results.title}</p>
+  const movieItem = moviesList.results.map(movie => (
+    <li key={movie.id}>
+      <p>{movie.title}</p>
     </li>
   ));
 

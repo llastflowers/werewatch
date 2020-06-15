@@ -1,7 +1,6 @@
-// const API_KEY = process.env.TMDB_API_KEY;
-
 export const getMovies = (query) => {
-  return fetch(`https://api.themoviedb.org/3/search/movie?api_key=${}&query=${query}`)
+  // eslint-disable-next-line
+  return fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${query}`)
     .then(res => res.json());
 };
 
