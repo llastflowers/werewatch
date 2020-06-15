@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import useMovies from '../hooks/useMovies';
-// import MovieResults from './MovieResults';
 const MovieSearch = () => {
   const [query, setQuery] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,7 +12,9 @@ const MovieSearch = () => {
   
   const searchResults = moviesList.results.map(movie =>
     <li key={movie.id}>
+      <img src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} style={{ width: '100px' }} onError={(e)=>{e.target.onerror = null; e.target.src = 'https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg';}} />
       <p>{movie.title}</p>
+      <p>{movie.release_date}</p>
     </li>
     
   );
