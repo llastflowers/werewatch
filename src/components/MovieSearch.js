@@ -15,11 +15,13 @@ const MovieSearch = () => {
   
   const searchResults = moviesList.results.map(movie =>
     <li key={movie.id}>
-      <Link to={`/${movie.id}`}>
-        <img src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} style={{ width: '100px' }} onError={(e)=>{e.target.onerror = null; e.target.src = 'https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg';}} />
-        <p>{movie.title}</p>
-        {/* <p>{movie.release_date}</p> */}
-      </Link>
+      <div className={styles.movieItem}>
+        <Link className={styles.movieLink} to={`/${movie.id}`}>
+          <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = 'https://lh3.googleusercontent.com/proxy/GOuPCAzhMBl60T5N9_oNmDUCRRh8kdI0QukUzA4YvACAlP9i0CniYBeh0FuKlNvXBI_0QA6l-GlvgpczcEZ2n0yN3Dpf_xzqsT39iXs3pw4njq15g34_aQAv-Pt5DsgG03Wg';}} />
+          <p>{movie.title}</p>
+          {/* <p>{movie.release_date}</p> */}
+        </Link>
+      </div>
     </li> 
   );
   return (

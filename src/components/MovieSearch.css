@@ -35,3 +35,33 @@
     }
   }
 }
+
+.movieItem {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.moviePoster {
+  height: 220px;
+  border-radius: 5px;
+}
+
+.movieLink {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 75%;
+  }
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
