@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 2%;
+  background-color: oldlace;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 12vh;
+  height: 10vh;
+}
+
+.werewolf {
+  height: 55px;
+  margin-left: 30px;
+}
+
+header a, footer a {
+  text-decoration: none;
+  color: rgb(187, 209, 181);
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(107, 126, 126);
+  }
+}
+
+footer {
+  font-family: 'Bungee', cursive;
+  letter-spacing: 2px;
+  font-size: 2vh;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

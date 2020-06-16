@@ -1,4 +1,4 @@
-# WereWatch
+# Werewatch
 
 > This is an app and it does things
 
@@ -7,6 +7,9 @@
 ## Tech
 
 ## Credits
+* The Movie Database API
+* Utelly API
+* Flaticon
 
 ## License
 MIT © Brittany L. Houtz
