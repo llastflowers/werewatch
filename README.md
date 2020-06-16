@@ -1,4 +1,4 @@
-# WereWatch
+# Werewatch
 
 > This is an app and it does things
 
