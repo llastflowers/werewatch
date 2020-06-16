@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getMovies } from '../services/movieApis';
 
-export const useMovies = (query) => {
+const useMovies = (query) => {
   const [movieResults, setMovieResults] = useState({
     results:[]
   });

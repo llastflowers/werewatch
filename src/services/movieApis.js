@@ -10,7 +10,13 @@ export const getDetails = (movie_id) => {
     .then(res => res.json());
 };
 
-// export const getProviders = (movieid) => {
-//   return fetch('')
-//     .then(res => res.json());
-// };
+export const getProviders = (movie_id) => {
+  return fetch(`https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/idlookup?country=US&source_id=${movie_id}&source=tmdb`, {
+    'headers': {
+      // eslint-disable-next-line
+      'x-rapidapi-key': `${process.env.UTELLY_API_KEY}`
+    }
+  })
+    .then(res => res.json());
+  // .then(res => console.log(res));
+};

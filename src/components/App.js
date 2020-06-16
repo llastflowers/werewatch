@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Switch
+  Route
 } from 'react-router-dom';
 import MovieSearch from './MovieSearch';
 import MovieDetail from './MovieDetail';
+import Providers from './Providers';
 
 const Header = () => (
   <header>
@@ -29,6 +29,7 @@ export default function App() {
       <Header />
       <Route exact path="/" component={MovieSearch}/>
       <Route path="/:movie_id" component={MovieDetail} />
+      <Route path="/:movie_id" component={Providers} />
       <Footer />
     </Router>
   );

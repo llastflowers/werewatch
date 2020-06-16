@@ -19,8 +19,7 @@ const MovieSearch = () => {
         <p>{movie.title}</p>
         {/* <p>{movie.release_date}</p> */}
       </Link>
-    </li>
-    
+    </li> 
   );
   return (
     <>
