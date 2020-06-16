@@ -8,7 +8,7 @@
 
 ## Credits
 * The Movie Database API
-* Entertainment Data Hub API
+* Utelly API
 * Flaticon
 
 ## License
