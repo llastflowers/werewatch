@@ -3,13 +3,19 @@
 exports[`App component renders App 1`] = `
 <BrowserRouter>
   <Header />
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-  </Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    path="/:movie_id"
+  />
+  <Route
+    component={[Function]}
+    path="/:movie_id"
+  />
   <Footer />
 </BrowserRouter>
 `;
