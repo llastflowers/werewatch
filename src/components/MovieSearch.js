@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useMovies from '../hooks/useMovies';
+import styles from './MovieSearch.css';
 
 const MovieSearch = () => {
   const [query, setQuery] = useState('');
@@ -23,9 +24,9 @@ const MovieSearch = () => {
   );
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input type='text' placeholder="Search by movie title" value={searchTerm} onChange={({ target }) => setSearchTerm(target.value)} />
-        <button>Search</button>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <input className={styles.search} type='text' placeholder="Search by movie title" value={searchTerm} onChange={({ target }) => setSearchTerm(target.value)} />
+        <button className={styles.button}>Search</button>
       </form>
       <ul>
         {searchResults}

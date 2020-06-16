@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 body {
   box-sizing: border-box;
@@ -23,12 +21,12 @@ header {
   margin-left: 30px;
 }
 
-a {
+header a, footer a {
   text-decoration: none;
   color: rgb(187, 209, 181);
 }
 
-a:hover {
+header a:hover, footer a:hover {
   text-decoration: none;
   color: rgb(107, 126, 126);
 }
@@ -37,7 +35,7 @@ footer {
   display: flex;
   justify-content: center;
   font-family: 'Bungee', cursive;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 2vh;
   position: absolute;
   bottom: 5vh;
