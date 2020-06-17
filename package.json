@@ -18,8 +18,12 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "npm run test --watch",
-    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "build": "webpack -p --devtool source-map"
+    "rstart": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "rbuild": "webpack -p --devtool source-map",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "heroku-postbuild": "npm run build"}
   },
   "keywords": [],
   "author": "",
