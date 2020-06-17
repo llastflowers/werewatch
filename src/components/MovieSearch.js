@@ -18,8 +18,7 @@ const MovieSearch = () => {
       <div className={styles.movieItem}>
         <Link className={styles.movieLink} to={`/${movie.id}`}>
           <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = 'https://lh3.googleusercontent.com/proxy/GOuPCAzhMBl60T5N9_oNmDUCRRh8kdI0QukUzA4YvACAlP9i0CniYBeh0FuKlNvXBI_0QA6l-GlvgpczcEZ2n0yN3Dpf_xzqsT39iXs3pw4njq15g34_aQAv-Pt5DsgG03Wg';}} />
-          <p>{movie.title}</p>
-          {/* <p>{movie.release_date}</p> */}
+          <p>{movie.title} ({movie.release_date?.slice(0, 4)})</p>
         </Link>
       </div>
     </li> 
