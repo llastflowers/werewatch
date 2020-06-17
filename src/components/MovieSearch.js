@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useMovies from '../hooks/useMovies';
 import styles from './MovieSearch.css';
+import poster_placeholder from '../assets/poster_placeholder.png';
 
 const MovieSearch = () => {
   const [query, setQuery] = useState('');
@@ -17,7 +18,7 @@ const MovieSearch = () => {
     <li key={movie.id}>
       <div className={styles.movieItem}>
         <Link className={styles.movieLink} to={`/${movie.id}`}>
-          <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = '../assets/movie_placeholder.png';}} />
+          <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = poster_placeholder;}} />
           <p>{movie.title} ({movie.release_date?.slice(0, 4)})</p>
         </Link>
       </div>

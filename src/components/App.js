@@ -8,11 +8,12 @@ import MovieDetail from './MovieDetail';
 import Providers from './Providers';
 import './reset.css';
 import styles from './App.css';
+import werewolf from '../assets/werewolf.png';
 
 const Header = () => (
   <header>
     <a href="/">
-      <h1>Werewatch<img className={styles.werewolf}src="./assets/werewolf.png"></img></h1>
+      <h1>Werewatch<img className={styles.werewolf}src={werewolf}></img></h1>
     </a>
   </header>
 );
