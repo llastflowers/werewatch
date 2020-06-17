@@ -9,7 +9,7 @@ const Providers = ({ match }) => {
     <li key={provider.id}>
       <div  className={styles.providers}>
         <a target="_blank" rel="noopener noreferrer" href={provider.url}>
-          <img className={styles.providerIcon} src={provider.icon} onError={(e)=>{e.target.onerror = null; e.target.src = 'src/assets/provider_placeholder.png';}} />
+          <img className={styles.providerIcon} src={provider.icon} onError={(e)=>{e.target.onerror = null; e.target.src = 'assets/provider_placeholder.png';}} />
         </a>
       </div>
     </li>

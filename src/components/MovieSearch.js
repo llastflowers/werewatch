@@ -17,7 +17,7 @@ const MovieSearch = () => {
     <li key={movie.id}>
       <div className={styles.movieItem}>
         <Link className={styles.movieLink} to={`/${movie.id}`}>
-          <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = 'src/assets/movie_placeholder.png';}} />
+          <img className={styles.moviePoster} src={`http://image.tmdb.org/t/p/w780/${movie.poster_path}`} onError={(e)=>{e.target.onerror = null; e.target.src = 'assets/movie_placeholder.png';}} />
           <p>{movie.title} ({movie.release_date?.slice(0, 4)})</p>
         </Link>
       </div>
