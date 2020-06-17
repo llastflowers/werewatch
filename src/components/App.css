@@ -18,7 +18,11 @@ header {
 }
 
 .werewolf {
+<<<<<<< HEAD
   height: 8.5vh;
+=======
+  height: 85px;
+>>>>>>> a269066480573221098e0ea6ef17f497b17ff0da
   margin-left: 30px;
 }
 
@@ -37,6 +41,11 @@ footer {
   letter-spacing: 2px;
   font-size: 2vh;
   position: absolute;
+<<<<<<< HEAD
   top: 3vh;
   right: 2.5vw;
+=======
+  top: 25px;
+  right: 25px;
+>>>>>>> a269066480573221098e0ea6ef17f497b17ff0da
 }

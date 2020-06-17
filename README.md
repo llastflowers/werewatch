@@ -29,7 +29,7 @@ MIT © Brittany L. Houtz
 
 * Parent component App contains header and footer
 * App renders MovieSearch, MovieDetail, and Providers components. Latter two are rendered together on one page
-* MovieSearch has search form and search results in a grid, with each having a movie poster, title, and release year
+* MovieSearch has search form and search results in a grid, with each result having a movie poster, title, and release year
 * MovieDetail has a movie poster, release year, runtime, and a short plot overview
 * Providers has a list of streaming platform icons which are links to the given movie's page on each platform
 
