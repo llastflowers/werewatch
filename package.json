@@ -1,6 +1,9 @@
 {
   "name": "werewatch",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "description": "> This is an app and it does things",
   "main": "src/index.js",
   "jest": {
@@ -18,8 +21,8 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "npm run test --watch",
-    "rstart": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "rbuild": "webpack -p --devtool source-map",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "build": "webpack -p --devtool source-map",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
