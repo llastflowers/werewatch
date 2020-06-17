@@ -12,7 +12,7 @@ import styles from './App.css';
 const Header = () => (
   <header>
     <a href="/">
-      <h1>Werewatch<img className={styles.werewolf}src="../src/assets/werewolf.png"></img></h1>
+      <h1>Werewatch<img className={styles.werewolf}src="../assets/werewolf.png"></img></h1>
     </a>
   </header>
 );
