@@ -2,6 +2,9 @@
   "name": "werewatch",
   "version": "1.0.0",
   "description": "> This is an app and it does things",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "src/index.js",
   "jest": {
     "setupFilesAfterEnv": [
