@@ -1,0 +1,10 @@
+.providers {
+  margin-top: 7%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.providerIcon {
+  height: 30px;
+  margin: 10px;
+}

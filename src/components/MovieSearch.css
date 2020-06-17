@@ -25,7 +25,7 @@
   font-family: 'Montserrat', sans-serif;
 
   &:hover {
-    background-color: black;
+    background-color: rgb(107, 126, 126);
     color: white;
     cursor: pointer;
 
@@ -52,7 +52,7 @@
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 20px;
 
   &:hover {
     text-decoration: none;

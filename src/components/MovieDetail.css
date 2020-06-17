@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.movieItem {
+  margin: 7% 7% 1% 7%;
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+}
+
+.moviePoster {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.movieDetails {
+  margin-left: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  width: 350px;
+}
+
+.movieTitle {
+  font-size: 32px;
+  line-height: 35px;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+.movieDate, .movieTime, .movieOverview {
+  margin: 10px auto;
+}
+
+.movieOverview {
+  text-align: justify;
+}
