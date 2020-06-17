@@ -7,8 +7,11 @@
 }
 
 .search {
-  width: 200px;
-  padding: 5px;
+  width: 300px;
+  height: 35px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-left: 7px;
   border-radius: 5px;
   border: 0.9px solid black;
   outline: none;
@@ -16,6 +19,10 @@
 }
 
 .button {
+  width: 70px;
+  height: 39px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   margin-left: 10px;
   background-color: rgb(187, 209, 181);
   color: black;
@@ -37,13 +44,13 @@
 }
 
 .movieItem {
-  width: 150px;
+  width: 210px;
   margin: 10px;
   text-align: center;
 }
 
 .moviePoster {
-  height: 220px;
+  height: 300px;
   border-radius: 5px;
 }
 
@@ -51,8 +58,8 @@
   text-decoration: none;
   color: black;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
 
   &:hover {
     text-decoration: none;
