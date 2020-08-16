@@ -6,14 +6,14 @@ body {
 }
 
 .movieItem {
-  margin: 10%;
+  margin: 8% auto;
   display: flex;
   flex-direction: row;
-  width: 50vw;
 }
 
 .moviePoster {
   width: 320px;
+  height: 480px;
   border-radius: 5px;
 }
 
@@ -22,7 +22,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 24px;
-  width: 400px;
+  width: 350px;
 }
 
 .movieTitle {
@@ -33,9 +33,100 @@ body {
 }
 
 .movieDate, .movieTime, .movieOverview {
-  margin: 15px auto;
+  margin: 5% auto;
 }
 
 .movieOverview {
   text-align: justify;
+}
+
+@media (max-width: 1240px) {
+  .movieItem {
+    margin: 5% auto;
+  }
+
+  .moviePoster {
+    width: 280px;
+    height: 420px;
+  }
+
+  .movieDetails {
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 22px;
+    width: 320px;
+  }
+  
+  .movieTitle {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .moviePoster {
+    width: 280px;
+    height: 420px;
+  }
+
+  .movieDetails {
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 22px;
+    width: 350px;
+  }
+  
+  .movieTitle {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .movieItem {
+    margin-top: 8%;
+  }
+  
+  .moviePoster {
+    width: 220px;
+    height: 330px;
+  }
+
+  .movieDetails {
+    font-size: 14px;
+    line-height: 20px;
+    width: 400px;
+  }
+  
+  .movieTitle {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .movieDate, .movieTime, .movieOverview {
+    margin: 3% auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .moviePoster {
+    width: 180px;
+    height: 270px;
+  }
+
+  .movieDetails {
+    margin-left: 5%;
+    font-size: 14px;
+    line-height: 18px;
+    width: 300px;
+  }
+  
+  .movieTitle {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .movieDate, .movieTime, .movieOverview {
+    margin: 3% auto;
+  }
 }

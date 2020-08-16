@@ -12,8 +12,7 @@ header {
   display: flex;
   justify-content: center;
   font-family: 'Bungee Inline', cursive;
-  font-size: 12vh;
-  height: 10vh;
+  font-size: 5.6em;
 }
 
 .werewolf {
@@ -34,8 +33,75 @@ header a, footer a {
 footer {
   font-family: 'Bungee', cursive;
   letter-spacing: 2px;
-  font-size: 2vh;
+  font-size: 1em;
   position: absolute;
   top: 30px;
   right: 30px;
+}
+
+@media (max-width: 1240px) {
+  header {
+    font-size: 4.75em;
+  }
+  
+  .werewolf {
+    height: 72px;
+    margin-left: 25px;
+  }
+
+  footer {
+    font-size: 0.85em;
+    top: 28px;
+    right: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    font-size: 4em;
+  }
+  
+  .werewolf {
+    height: 60px;
+    margin-left: 25px;
+  }
+
+  footer {
+    font-size: 0.85em;
+    top: 24px;
+    right: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    font-size: 3.5em;
+  }
+  
+  .werewolf {
+    height: 45px;
+    margin-left: 16px;
+  }
+  
+  footer {
+    font-size: 0.55em;
+    top: 18px;
+    right: 18px;
+  }
+}
+
+@media (max-width: 570px) {
+  header {
+    font-size: 2.5em;
+  }
+  
+  .werewolf {
+    height: 40px;
+  }
+  
+  footer {
+    font-size: 0.45em;
+    top: 15px;
+    right: 12px;
+  }
 }
