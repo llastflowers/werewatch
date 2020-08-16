@@ -6,7 +6,6 @@ import provider_placeholder from '../assets/provider_placeholder.png';
 
 const Providers = ({ match }) => {
   const providersList = useProviders(match.params.movie_id);
-  console.log(providersList);
   const currentProviders = providersList?.collection?.locations && providersList.collection.locations.map(provider => (
     <li key={provider.id}>
       <div className={styles.providers}>
