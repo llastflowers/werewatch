@@ -5,10 +5,10 @@ import styles from './Providers.css';
 import provider_placeholder from '../assets/provider_placeholder.png';
 
 const Providers = ({ match }) => {
-  const providers = useProviders(match.params.movie_id);
-  const movieProviders = providers.collection.locations.map(provider => (
+  const providersList = useProviders(match.params.movie_id);
+  const currentProviders = providersList?.collection?.locations && providersList.collection.locations.map(provider => (
     <li key={provider.id}>
-      <div  className={styles.providers}>
+      <div className={styles.providers}>
         <a target="_blank" rel="noopener noreferrer" href={provider.url}>
           <img className={styles.providerIcon} src={provider.icon} onError={(e)=>{e.target.onerror = null; e.target.src = provider_placeholder;}} />
         </a>
@@ -18,7 +18,7 @@ const Providers = ({ match }) => {
 
   return (
     <ul>
-      {movieProviders}
+      {currentProviders}
     </ul>
   );
 };

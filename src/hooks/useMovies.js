@@ -2,16 +2,17 @@ import { useState, useEffect } from 'react';
 import { getMovies } from '../services/movieApis';
 
 const useMovies = (query) => {
-  const [movieResults, setMovieResults] = useState({
+  const [movies, setMovies] = useState({
     results:[]
   });
+  
   useEffect(() => {
     if(query !== '') {
       getMovies(query)
-        .then(searchResults => setMovieResults(searchResults));
+        .then(searchResults => setMovies(searchResults));
     }
   }, [query]);
-  return movieResults;
+  return movies;
 };
 
 export default useMovies;

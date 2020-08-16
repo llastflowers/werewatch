@@ -24,6 +24,7 @@ const MovieSearch = () => {
       </div>
     </li> 
   );
+  
   return (
     <>
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -36,4 +37,5 @@ const MovieSearch = () => {
     </>
   );
 };
+
 export default MovieSearch;
