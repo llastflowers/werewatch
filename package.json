@@ -18,9 +18,9 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "npm run test --watch",
-    "rstart": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "build": "webpack -p --devtool source-map",
-    "start": "node server.js"
+    "rstart": "node server.js"
   },
   "keywords": [],
   "author": "",
