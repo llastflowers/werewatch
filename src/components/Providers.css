@@ -1,11 +1,10 @@
 .providers {
-  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .providerIcon {
-  height: 40px;
-  max-width: 125px;
-  margin: 20px;
+  height: 10px;
+  max-width: 40px;
+  margin: 0 20px 0 20px;
 }

@@ -4,7 +4,7 @@
 
 body {
   box-sizing: border-box;
-  margin: 2%;
+  margin: 3% auto;
   background-color: oldlace;
 }
 
@@ -75,33 +75,89 @@ footer {
 
 @media (max-width: 900px) {
   header {
-    font-size: 3.5em;
+    font-size: 3.3em;
   }
   
   .werewolf {
-    height: 45px;
+    height: 55px;
     margin-left: 16px;
   }
   
   footer {
-    font-size: 0.55em;
+    font-size: 0.85em;
     top: 18px;
     right: 18px;
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 770px) {
   header {
     font-size: 2.5em;
   }
   
   .werewolf {
-    height: 40px;
+    height: 42px;
+    margin-left: 10px;
   }
   
   footer {
-    font-size: 0.45em;
+    font-size: 0.7em;
     top: 15px;
-    right: 12px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 2em;
+  }
+  
+  .werewolf {
+    height: 32px;
+    margin-left: 10px;
+  }
+  
+  footer {
+    font-size: 0.55em;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    margin: 5% auto;
+    font-size: 2em;
+  }
+  
+  .werewolf {
+    height: 34px;
+    margin-left: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    position: static;
+    font-size: 0.65em;
+    margin: 15% 0 5% 0;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    margin: 5% auto;
+    font-size: 1.65em;
+  }
+  
+  .werewolf {
+    height: 26px;
+    margin-left: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    position: static;
+    font-size: 0.65em;
+    margin: 15% 0 5% 0;
   }
 }
