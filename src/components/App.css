@@ -131,15 +131,15 @@ footer {
   }
   
   .werewolf {
-    height: 34px;
+    height: 32px;
     margin-left: 10px;
   }
   
   footer {
     text-align: center;
     position: static;
-    font-size: 0.65em;
-    margin: 15% 0 5% 0;
+    font-size: 0.75em;
+    margin: 10% 0 5% 0;
   }
 }
 
