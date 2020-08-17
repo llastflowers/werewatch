@@ -98,4 +98,19 @@ ul {
     height: 30px;
     font-size: 13px;
   }
+
+  .movieItem {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .moviePoster {
+    height: 400px;
+    border-radius: 5px;
+  }
+  
+  .movieLink {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
