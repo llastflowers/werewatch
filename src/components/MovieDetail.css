@@ -172,8 +172,8 @@ body {
   }
 
   .moviePoster {
-    width: 350px;
-    height: 525px;
+    width: 315px;
+    height: 473px;
   }
 
   .movieDetails {
@@ -202,8 +202,8 @@ body {
   }
 
   .moviePoster {
-    width: 220px;
-    height: 330px;
+    width: 240px;
+    height: 360px;
   }
 
   .movieDetails {
@@ -211,7 +211,7 @@ body {
     margin-top: 10%;
     font-size: 14px;
     line-height: 20px;
-    width: 220px;
+    width: 240px;
   }
   
   .movieTitle {

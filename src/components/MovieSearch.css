@@ -80,6 +80,7 @@ ul {
   }
 
   .button {
+    padding-left: 0;
     width: 62px;
     height: 33px;
     font-size: 14px;
