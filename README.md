@@ -42,8 +42,7 @@ MIT © Brittany L. Houtz
 
 ### Additional Features/Changes
 
-* Utelly API urls for hbo max and vudu icons are broken; want to set up replacement logos for these services (currently using one placeholder image for both of these)
+* Utelly API url for vudu icon is broken; want to set up a replacement logo for this service (currently using a placeholder image)
 * Want to display a "no results" message on search page, where applicable
 * Want to display a "not currently available" message in place of provider icons when a movie is not available to stream
-* Optimize for mobile & other views
-* Some kind of movie recommendation feature?
+* Add some kind of movie recommendation feature?
