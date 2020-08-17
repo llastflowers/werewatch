@@ -1,10 +1,33 @@
 .providers {
-  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
+  margin: 10% auto;
 }
 
 .providerIcon {
-  height: 40px;
-  margin: 20px;
+  height: 30px;
+  max-width: 125px;
+  margin: 0 25px;
+}
+
+@media (max-width: 770px) {
+  .providers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+  
+  .providerIcon {
+    height: 25px;
+    max-width: 104px;
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .providerIcon {
+    height: 20px;
+    max-width: 83px;
+    margin: 0 15px;
+  }
 }
