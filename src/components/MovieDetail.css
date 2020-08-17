@@ -9,6 +9,8 @@ body {
   margin: 8% auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .moviePoster {
@@ -84,23 +86,28 @@ body {
 
 @media (max-width: 900px) {  
   .movieItem {
-    margin: 7% auto;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .moviePoster {
-    width: 200px;
-    height: 300px;
+    width: 450px;
+    height: 675px;
   }
 
   .movieDetails {
-    font-size: 14px;
-    line-height: 20px;
-    width: 300px;
+    margin-left: 0;
+    margin-top: 7%;
+    font-size: 18px;
+    line-height: 22px;
+    width: 450px;
   }
   
   .movieTitle {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 34px;
+    line-height: 38px;
   }
 
   .movieDate, .movieTime, .movieOverview {
@@ -109,48 +116,50 @@ body {
 }
 
 @media (max-width: 770px) {
+  .movieItem {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .moviePoster {
-    width: 180px;
-    height: 270px;
+    width: 400px;
+    height: 600px;
   }
 
   .movieDetails {
-    margin-left: 5%;
-    font-size: 14px;
-    line-height: 18px;
-    width: 300px;
+    width: 400px;
   }
   
   .movieTitle {
-    font-size: 25px;
-    line-height: 28px;
-  }
-
-  .movieDate, .movieTime, .movieOverview {
-    margin: 3% auto;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
 @media (max-width: 600px) {
+  .movieItem {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .moviePoster {
-    width: 180px;
-    height: 270px;
+    width: 350px;
+    height: 525px;
   }
 
   .movieDetails {
-    margin-left: 5%;
-    font-size: 13px;
-    line-height: 16px;
-    width: 270px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 350px;
   }
   
   .movieTitle {
-    font-size: 25px;
-    line-height: 28px;
-  }
-
-  .movieDate, .movieTime, .movieOverview {
-    margin: 3% auto;
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -168,7 +177,6 @@ body {
   }
 
   .movieDetails {
-    margin-left: 0;
     margin-top: 10%;
     font-size: 16px;
     line-height: 22px;
