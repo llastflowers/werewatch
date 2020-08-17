@@ -23,6 +23,7 @@
   height: 39px;
   font-size: 16px;
   letter-spacing: 0.5px;
+  text-align: center;
   margin-left: 10px;
   background-color:  rgb(187, 209, 181);
   color: black;
@@ -80,7 +81,6 @@ ul {
   }
 
   .button {
-    padding-left: 3px;
     width: 62px;
     height: 33px;
     font-size: 14px;
@@ -95,7 +95,6 @@ ul {
   }
 
   .button {
-    padding-left: 3px;
     height: 30px;
     font-size: 13px;
   }
